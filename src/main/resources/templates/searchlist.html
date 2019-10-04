@@ -12,7 +12,9 @@
     <div class="topnav">
         <a class="active" href="/">Home</a>
         <a href="/add">Add a Job</a>
-        <!--        <a href="#contact">Contact</a>-->
+        <a><b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSuji's List</b></a>
         <div class="search-container">
             <form th:action="@{/processsearch}" method="post">
                 <input type="text" placeholder="Search by Job Title..." name="search">
@@ -26,7 +28,9 @@
 <br /><br />
 <!--<a href="/">Flight List</a>-->
 <br /><br />
-<h2>Search list</h2>
+<div align="center">
+    <h2>Suji's List Search Results</h2>
+</div>
 <!--<div th:each="job : ${jobs}">-->
 <!--    <p th:text="${job.title}"></p>-->
 <!--    <p th:text="${job.description}"></p>-->
@@ -36,6 +40,11 @@
 <!--    <p th:text="${job.author}"></p>-->
 <!--    <p th:text="${job.phoneNumber}"></p>-->
 <!--</div>-->
+
+<div class="container">
+
+    <div style="background-color:lightblue">
+
 <table>
     <tr th:each="job : ${jobs}">
         <!--Title :<span th:text="${bullhorn.title}" ></span><br />-->
@@ -62,6 +71,10 @@
 
     </tr>
 </table>
+
+    </div>
+
+</div>
 
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

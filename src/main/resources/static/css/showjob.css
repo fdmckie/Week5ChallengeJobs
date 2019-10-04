@@ -75,3 +75,15 @@
         border: 1px solid #ccc;
     }
 }
+
+.updatebutton {
+    padding: 15px 32px;
+    background-color: aqua;
+    border-radius: 12px;
+}
+
+.deletebutton {
+    padding: 15px 32px;
+    background-color: red;
+    border-radius: 12px;
+}
