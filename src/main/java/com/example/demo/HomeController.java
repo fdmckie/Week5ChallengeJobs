@@ -56,7 +56,7 @@ public class HomeController {
 
     @PostMapping("/processsearch")
     public String searchResult(Model model, @RequestParam(name = "search") String search) {
-        model.addAttribute("jobs", jobRepository.findByTitleContainingIgnoreCase(search));
+        model.addAttribute("jobs", jobRepository.findByTitleContainingIgnoreCaseOrderByAuthorAsc(search));
         return "searchlist";
 
 

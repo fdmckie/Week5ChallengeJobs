@@ -6,6 +6,8 @@ import java.util.ArrayList;
 
 public interface JobRepository extends CrudRepository<Job, Long> {
 
-    ArrayList<Job> findByTitleContainingIgnoreCase(String title);
+//    ArrayList<Job> findByTitleContainingIgnoreCase(String title);
+
+    ArrayList<Job> findByTitleContainingIgnoreCaseOrderByAuthorAsc (String title);
 
 }
